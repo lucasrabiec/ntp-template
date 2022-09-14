@@ -1,27 +1,18 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
-    "strict": false,
+    "strict": true,
     "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
     "outDir": "./dist",
-    "rootDir": ".",
+    "rootDir": "./src",
     "jsx": "react"
   },
-  "include": [
-    "."
-  ],
-  "exclude": [
-    "node_modules",
-    "dist",
-    "build",
-  ],
+  "include": ["src"],
+  "exclude": ["node_modules", "dist", "build"],
   "ts-node": {
     "transpileOnly": true
   }

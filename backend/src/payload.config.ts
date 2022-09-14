@@ -1,13 +1,16 @@
-import { buildConfig } from 'payload/config';
-import path from 'path';
-// import Examples from './collections/Examples';
-import Users from './collections/Users';
 import dotenv from 'dotenv';
+import path from 'path';
+import { buildConfig } from 'payload/config';
+
+// import { Examples } from './collections/Examples';
+import { Users } from './collections/users';
 
 dotenv.config();
 
+const serverURL = `${process.env.SERVER_HOST ?? 'http://localhost'}:${process.env.SERVER_PORT ?? 3080}`;
+
 export default buildConfig({
-  serverURL: process.env.SERVER_URL,
+  serverURL: serverURL,
   admin: {
     user: Users.slug,
   },

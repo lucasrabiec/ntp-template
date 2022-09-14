@@ -163,21 +163,6 @@ dist
 # Ignore code-workspaces
 *.code-workspace
 
-# End of https://www.toptal.com/developers/gitignore/api/node,visualstudiocode
-
-# testing
-/coverage
-
-# production
-/build
-
-# misc
-.DS_Store
-*.pem
-
-# vercel
-.vercel
-
-# typescript
-*.tsbuildinfo
 next-env.d.ts
+
+# End of https://www.toptal.com/developers/gitignore/api/node,visualstudiocode

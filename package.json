@@ -1,15 +1,29 @@
 {
   "name": "ntp-template",
-  "license": "MIT",
+  "version": "1.0.0",
+  "description": "",
   "scripts": {
-    "postinstall": "concurrently \"yarn install:frontend\" \"yarn install:backend\"",
-    "install:frontend": "cd frontend && yarn",
-    "install:backend": "cd backend && yarn",
-    "dev": "concurrently \"yarn dev:backend\" \"yarn dev:frontend\"",
-    "dev:frontend": "cd frontend && yarn dev",
-    "dev:backend": "cd backend && yarn dev"
+    "preinstall": "npx only-allow pnpm",
+    "dev": "pnpm --stream -r run dev",
+    "build": "pnpm --stream -r run build",
+    "start": "pnpm --stream -r run start"
   },
+  "keywords": [
+    "nextjs",
+    "tailwindcss",
+    "payloadcms",
+    "pnpm",
+    "template"
+  ],
+  "author": "Lucas Rabiec",
+  "license": "MIT",
   "devDependencies": {
-    "concurrently": "^7.3.0"
+    "@trivago/prettier-plugin-sort-imports": "^3.3.0",
+    "@typescript-eslint/eslint-plugin": "^5.37.0",
+    "@typescript-eslint/parser": "^5.37.0",
+    "eslint": "8.23.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "prettier": "^2.7.1"
   }
 }
