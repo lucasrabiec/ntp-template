@@ -14,6 +14,7 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint'],
   rules: {
+    '@typescript-eslint/consistent-type-imports': 'error',
     'import/prefer-default-export': 'off',
     'import/no-cycle': ['error', { ignoreExternal: true }],
     'import/newline-after-import': 'error',

@@ -1,0 +1,9 @@
+{
+  "eslint.workingDirectories": ["./frontend", "./backend"],
+  "eslint.packageManager": "pnpm",
+  "eslint.format.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.codeActionsOnSave.mode": "problems"
+}
