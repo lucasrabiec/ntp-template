@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['../.eslintrc.js', 'plugin:tailwindcss/recommended', 'plugin:@next/next/recommended'],
+  extends: ['plugin:tailwindcss/recommended', 'plugin:@next/next/recommended', '../.eslintrc.js'],
   plugins: ['tailwindcss'],
   settings: {
     tailwindcss: {
