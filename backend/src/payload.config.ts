@@ -2,7 +2,7 @@ import dotenv from 'dotenv';
 import path from 'path';
 import { buildConfig } from 'payload/config';
 
-import { Examples } from './collections/examples';
+import { Examples } from './collections/Examples';
 import { Users } from './collections/Users';
 
 dotenv.config();
