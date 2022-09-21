@@ -14,7 +14,7 @@ export default function Home() {
       <main className='flex min-h-screen flex-1 flex-col items-center justify-center py-16'>
         <h1 className='m-0 text-center text-6xl leading-tight'>
           Welcome to{' '}
-          <a className={'text-blue-600 no-underline [&:is(:hover,:focus,:active)]:underline'} href='https://nextjs.org'>
+          <a className='text-blue-600 no-underline [&:is(:hover,:focus,:active)]:underline' href='https://nextjs.org'>
             Next.js!
           </a>
         </h1>

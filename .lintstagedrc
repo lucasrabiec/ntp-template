@@ -1,0 +1,18 @@
+{
+  "*.{js,jsx,ts,tsx}": [
+    "cross-env NODE_ENV=development eslint --cache",
+    "prettier --ignore-path .eslintignore --config .prettierrc --write"
+  ],
+  ".eslintrc.js": [
+    "prettier --ignore-path .eslintignore --config .prettierrc --write"
+  ],
+  "*.{json,prettierrc}": [
+    "prettier --ignore-path .eslintignore --parser json --config .prettierrc --write"
+  ],
+  "*.{css,scss}": [
+    "prettier --ignore-path .eslintignore --config .prettierrc --write"
+  ],
+  "*.{html,md,yml}": [
+    "prettier --ignore-path .eslintignore --config .prettierrc --write"
+  ]
+}

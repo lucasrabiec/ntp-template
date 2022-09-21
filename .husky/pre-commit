@@ -1,0 +1,4 @@
+#!/bin/sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+pnpx cross-env FORCE_COLOR=1 pnpx lint-staged

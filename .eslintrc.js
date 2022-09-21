@@ -6,15 +6,17 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
-    'prettier',
     'plugin:import/recommended',
     'plugin:import/typescript',
+    'airbnb-base',
+    'prettier',
   ],
   overrides: [],
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint'],
   rules: {
-    '@typescript-eslint/consistent-type-imports': 'error',
+    'no-use-before-define': ['off'],
+    '@typescript-eslint/consistent-type-imports': 'off',
     'import/prefer-default-export': 'off',
     'import/no-cycle': ['error', { ignoreExternal: true }],
     'import/newline-after-import': 'error',
@@ -30,5 +32,13 @@ module.exports = {
         pathGroupsExcludedImportTypes: [],
       },
     ],
+    'import/extensions': ['off'],
+  },
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      },
+    },
   },
 };
